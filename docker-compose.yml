@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  spring-kaikan-api:
+    image:  spring-kaikan-api
+    container_name: spring-api-container
+    ports:
+      - "8080:8080"
+    networks:
+      spring-network:
+        -
+  postgres:
+networks:
+  spring-network:
+volumes:
+  postgres-volume:
