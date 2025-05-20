@@ -4,16 +4,17 @@ import com.kaikan.generics.BaseEntity;
 import com.kaikan.model.categoria.Categoria;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table (name = "plato")
+@Table (name = "plato", schema = "public")
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+
+@Data
 
 public class Plato extends BaseEntity {
     private String nombre;
