@@ -23,4 +23,4 @@ COPY ./src /root/src
 RUN ./mvnw clean install -DskipTests
 
 # LEVANTAR NUESTRA APLICACION CUANDO EL CONTENEDOR INICIE
-ENTRYPOINT ["java", "-jar", "/root/target/Spring.jar"]
+ENTRYPOINT ["java", "-jar", "/root/target/demo-0.0.1-SNAPSHOT.jar"]
