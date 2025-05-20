@@ -17,7 +17,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-
 public class Pedido extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "id_usuario")

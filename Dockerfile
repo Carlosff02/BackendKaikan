@@ -2,7 +2,6 @@
 FROM eclipse-temurin:21.0.7_6-jdk AS builder
 
 
-
 # DEFINIR DIRECTORIO RAIZ DE NUESTRO CONTENEDOR
 WORKDIR /app
 
